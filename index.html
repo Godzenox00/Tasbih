@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Tasbih Counter</title>  
+
+<link rel="stylesheet" href="assets/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@500&display=swap" rel="stylesheet">  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>  
+
+<body>  
+
+<div class="menu-btn" onclick="toggleMenu()">
+  <div></div><div></div><div></div>
+</div>
+
+<div class="menu" id="menu">
+  <button onclick="exportImage()">Export Image</button>
+  <button onclick="exportPDF()">Export PDF</button>
+</div>
+
+<div class="main">
+  <div class="counter-body">  
+
+    <div id="display" class="screen">0</div>  
+
+    <div class="buttons">  
+      <button class="btn" onclick="increment()">Count</button>  
+      <button class="btn" onclick="decrement()">-</button>  
+      <button class="btn" onclick="reset()">Reset</button>  
+    </div>  
+
+    <ul class="dhikr-list">
+      <li class="active">سُبْحَانَ ٱللَّه</li>
+      <li>ٱلْحَمْدُ لِلَّه</li>
+      <li>ٱللَّهُ أَكْبَر</li>
+      <li>لَا إِلَٰهَ إِلَّا ٱللَّه</li>
+      <li>أَسْتَغْفِرُ ٱللَّه</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 Zenox API. All Rights Reserved
+</div>
+
+<!-- JS -->
+<script src="assets/app.js"></script>
+
+</body>  
+</html>
