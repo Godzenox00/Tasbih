@@ -1,0 +1,105 @@
+body {  
+  margin: 0;  
+  font-family: 'Cairo', sans-serif;  
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;  
+  height: 100vh;  
+  background: linear-gradient(135deg, #fdfaf6, #f3efe6);
+}
+
+.main {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex:1;
+  width:100%;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 28px;
+  cursor: pointer;
+}
+.menu-btn div {
+  height: 3px;
+  background: #8a6d2f;
+  margin: 5px 0;
+}
+
+.menu {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+.menu button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border: none;
+  background: #c9a94d;
+}
+
+.counter-body {  
+  background: #fff;  
+  border-radius: 20px;  
+  padding: 25px;  
+  text-align: center;  
+  max-width: 320px;  
+  width: 90%;  
+}  
+
+.screen {  
+  background: #f8f5ef;  
+  color: #1f7a4c;  
+  font-size: 3rem;  
+  padding: 15px;  
+  border-radius: 10px;  
+  margin-bottom: 20px;  
+}  
+
+.buttons {  
+  display: flex;  
+  gap: 8px;
+  margin-bottom: 15px;  
+}  
+
+.btn {  
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #c9a94d;
+  font-weight: bold;
+}
+
+.dhikr-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dhikr-list li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Amiri', serif;
+}
+
+.dhikr-list li.active {
+  background: rgba(201,169,77,0.3);
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  color: #666;
+}
